@@ -52,7 +52,7 @@ def create_cluster_df(df):
     return avg_per_hour, threshold, cluster_grouped
 
 # Membaca data dari all_data.csv
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("./dashboard/all_data.csv")
 
 # Membuat komponen filter menggunakan dteday_x
 all_df["dteday_x"] = pd.to_datetime(all_df["dteday_x"])
